@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     {{html headScripts}}
   </head>
-  <body>
+  <body{{if bodyClass}} class="${bodyClass}"{{/if}}>
     <!-- Header -->
     <header id="page-header">
       <h1>${title}</h1>

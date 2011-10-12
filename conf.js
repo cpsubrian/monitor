@@ -2,10 +2,14 @@
  * Application Configuration.
  */
 module.exports = {
-  port: 3001,
-  hostname: 'localhost:3001',
-  title: 'Application Title',
+  port: 3004,
+  hostname: 'monitor.brianthomaslink.com',
+  title: 'Monitor',
   session: {
-    secret: 'Your Secret Here'
+    secret: 'JKakldj98734876KLJPPPKJDFKJH979879087KJHDLKJSLxBdMjhkjh'
   },
+  auth: {
+    username: 'admin',
+    password: 'admin'
+  }
 };
