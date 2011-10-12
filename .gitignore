@@ -4,3 +4,4 @@ pids/*
 */pids/*
 public/css/*.css
 node_modules/*
+conf.js
