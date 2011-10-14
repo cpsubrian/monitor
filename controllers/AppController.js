@@ -1,17 +1,15 @@
-var app;
-
 /**
  * Application Controller.
  */
-var AppController = module.exports = function(_app) {
-  app = _app;
+var AppController = module.exports = function(app) {
+  this.app = app;
   
   // Routes.
   app.get('/', this.index);
   app.get('/login', this.loginForm);
   app.post('/login', this.login);
   app.get('/logout', this.logout);
-}
+};
 
 /**
  * Methods and properties.
@@ -21,7 +19,7 @@ AppController.prototype = {
   /**
    * Index. 
    */
-  index: function(req, res) {
+  index: function(req, res) {    
     res.render('index');
   },
   
@@ -78,7 +76,6 @@ AppController.prototype = {
       res.redirect('/'); 
     }
   }
-    
   
 };
 
